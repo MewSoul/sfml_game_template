@@ -1,7 +1,5 @@
-#include "flecs.h"
-#include "imgui.h"
-#include "imgui-SFML.h"
 
+#include "flecs.h"
 #include "Tracy.hpp"
 
 #include "Clock.h"
