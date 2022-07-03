@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.21)
 include(FetchContent)
 
-set(PROJECT_NAME "sfml_imgui_template")
+set(PROJECT_NAME "sfml_game_template")
 project(${PROJECT_NAME})
 
 set(CMAKE_CXX_STANDARD 14)
