@@ -8,6 +8,7 @@
 
 int main() {
     flecs::world world;
+
     world.set<flecs::Rest>({});
     flecs::log::set_level(0);
 

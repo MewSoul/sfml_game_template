@@ -40,8 +40,8 @@ FetchContent_MakeAvailable(Tracy)
 add_subdirectory(third_party/imgui) # From: https://github.com/ocornut/imgui
 include_directories(third_party/cuteheaders) # From: https://github.com/RandyGaul/cute_headers
 
-add_executable(${PROJECT_NAME} src/main.cpp src/Input.cpp src/Input.h src/Renderer.cpp src/Renderer.h src/Clock.cpp src/Clock.h)
-
+include_directories(src/core)
+add_executable(${PROJECT_NAME} src/main.cpp src/core/Input.cpp src/core/Input.h src/core/Renderer.cpp src/core/Renderer.h src/core/Clock.cpp src/core/Clock.h)
 target_link_libraries(${PROJECT_NAME} flecs sfml-system sfml-window sfml-graphics sfml-audio sfml-network nlohmann_json::nlohmann_json imgui TracyClient)
 
 add_compile_options(-O2 -DTRACY_ENABLE)
